@@ -1,16 +1,26 @@
 // Silahkan sesuaikan header
-
+#ifndef OBJEK_H
+#define OBJEK_H
+#include <iostream>
+using namespace std;
 // Status dari lilin
 typedef enum {on, off} status;
 
 typedef struct {
     // Isi elemen yang dimiliki oleh tipe data korban
     // korban disimbolkan dengan huruf K pada peta
+    char simbol = 'K';
+    string nama;
+    int x,y;
 } korban;
 
 typedef struct {
     // Isi elemen yang dimiliki oleh tipe data lilin
     // lilin disimbolkan dengan huruf L pada peta
+    const char simbol = 'L';
+    string nama;
+    int x,y;
+    status nyala;
 } lilin;
 
 /**
@@ -35,3 +45,5 @@ void TambahKorban(char** peta, string nama, int x, int y, korban* korban_baru);
  * @result lilin baru telah ditambahkan dan simbol pada koordinat tersebut diisi dengan l
  */
 void TambahLilin(char** peta, int x, int y, lilin* lilin_baru);
+
+#endif

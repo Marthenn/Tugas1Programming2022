@@ -1,5 +1,8 @@
 // Tuliskan Header Terlebih dahulu
-
+#ifndef PETA_H
+#define PETA_H
+#include <iostream>
+using namespace std;
 /**
  * @brief Fungsi untuk membuat peta persegi dengan ukuran tertentu
  * 
@@ -23,7 +26,7 @@ void PrintPeta(char** peta, int n_peta);
  * // jangan lupa isi param di sini
  * @result peta ditampilkan dari sisi kiri
  */
-void PrintViewKiri(); // Silakan sesuaikan parameternya
+void PrintViewKiri(char** peta, int n_peta); // Silakan sesuaikan parameternya
 
 /**
  * @brief Prosedur untuk menampilkan peta dari sisi kanan
@@ -31,4 +34,6 @@ void PrintViewKiri(); // Silakan sesuaikan parameternya
  * // jangan lupa isi param di sini
  * @result peta ditampilkan dari sisi kanan
  */
-void PrintViewKanan(); // Silakan sesuaikan parameternya
+void PrintViewKanan(char** peta, int n_peta); // Silakan sesuaikan parameternya
+
+#endif

@@ -1,5 +1,8 @@
 // Sesuaikan header
-
+#ifndef INTERFACE_H
+#define INTERFACE_H
+#include "peta.h"
+#include "objek.h"
 // Variabel yang menyatakan jumlah korban dan lilin pada peta
 #define jumlah_korban 2
 #define jumlah_lilin 2
@@ -20,3 +23,5 @@ void TambahObjek(char** peta);
  * @result peta ditampilkan dari berbagai sisi secara berurutan
  */
 void TampilkanViewPeta(char** peta,int n_peta);
+
+#endif

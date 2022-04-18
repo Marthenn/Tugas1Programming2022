@@ -25,6 +25,8 @@ void TambahObjek(char** peta){
 void TampilkanViewPeta(char** peta, int n_peta){
     cout<<"\nTampilan Peta dari Berbagai Sudut Pandang"<<endl;
     PrintPeta(peta,n_peta);
+    cout<<endl;
     PrintViewKiri(peta, n_peta);
+    cout<<endl;
     PrintViewKanan(peta, n_peta);
 }
